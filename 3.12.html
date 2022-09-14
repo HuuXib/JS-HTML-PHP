@@ -16,7 +16,16 @@
                     document.write(this.marka + '' + this.model + ', rok produkji: '  + this.rok_produkcji + "<br>");
                     
                 }
+            };
+            pojazd.wyswietlDane();
+
+            pojazd.numer_rej = "WA34789";
+            pojazd.wyswietlDetal = function() {
+                document.write('Marka: ' + this.marka + ', numer rejestracyjny: ' + this.numer_rej);
+             
             }
+            pojazd.wyswietlDetal();
+            
         </script>
     </body>
 </html>
